@@ -16,7 +16,13 @@ To lauch the machines simply run:
 
 `vagrant up`
 
-To create the certificates needed you can use the handy script `cert_init.sh`. Please tweak accordinlgy. 
+there are a few scripts that can help in managing to control the machines, manily ansible has been used. For examply to run a command on all the nodes run:
+
+`./run_cmd all "uname -a"`
+
+The pattern can be changes to address only workers, masters or lb. Have a look at the `hosts.ini` file. 
+
+To create the certificates needed you can use the handy script `cert_init.sh`. Please tweak accordingly. 
 
 
 
